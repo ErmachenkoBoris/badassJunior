@@ -274,3 +274,8 @@ function checkFinish(members) {
 }
 
 let numberPopulation = 0;
+
+Gene.prototype.random = function() {
+    this.x = Math.random() * canvasWidth;
+    this.y = Math.random() * canvasHeight;
+};
